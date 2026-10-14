@@ -34,5 +34,8 @@ Organizations build applications using software components from many vendors. Wh
 
 Resource: NTIA, The Minimum Elements for a Software Bill of Materials - https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
 ## Misconception in My Track
+Many developers think that putting settings into separate config files for each stage, like dev.env or prod.env, follows the Twelve-Factor App rules. However, this is wrong because creating a new file for every test or developer environment quickly becomes messy and hard to manage. In the "Config" section of The Twelve-Factor App, the guide states that environment variables must be independent and managed separately for each deploy, never grouped together as named environments.
 
 ## Open Question
+How can we update secret passwords inside running containers automatically when credentials change without restarting the whole application?
+
