@@ -20,11 +20,19 @@ The OWASP MASVS framework defines security requirements for protecting mobile ap
 Resource: OWASP MASVS - https://mas.owasp.org/MASVS/
 
 ## Networking
+BGP makes it possible for networks to inform each other about paths for sending traffic to specific Internet addresses. A network can announce that it delivers traffic to an address even when it is not authorized to do so, which is known as BGP route hijacking and sends traffic to the wrong network. With RPKI, networks validate if the entity announcing an address is authorized, though other checks and continuous monitoring are still required.
+
+Resource: RIPE NCC, RPKI - https://www.ripe.net/manage-ips-and-asns/resource-management/rpki/
 
 ## Cybersecurity
+Log4j is a Java tool that applications use to log events and errors. In December 2021, a major flaw called Log4Shell (CVE-2021-44228) was made public. An attacker could give data to an application to be logged and execute code on the affected system over the internet without logging in first. The primary method to fix the issue was updating to the fixed version, checking for vulnerable copies hidden in other applications, and confirming the fixes.
+
+Resource: Apache Logging Services, Security - https://logging.apache.org/security.html
 
 ## Data
+Organizations build applications using software components from many vendors. When a component has a security bug, an organization must know which applications use it. An SBOM (Software Bill of Materials) is like an ingredient list for a dish because it lists all parts of an application and how they connect. The minimum fields are supplier name, component name, component version, other unique identifiers, dependency relationships, SBOM author, and timestamp.
 
+Resource: NTIA, The Minimum Elements for a Software Bill of Materials - https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
 ## Misconception in My Track
 
 ## Open Question
